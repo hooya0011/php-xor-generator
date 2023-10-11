@@ -28,7 +28,7 @@ This is a PHP code generator that can perform an xor operation on the input stri
 Each time it is run, the value used in the xor operation changes.
 
 [How to use it]
-1. 1. php gen.php
+1. php gen.php
 2. Enter the code you want to run as an interval function
 
 
