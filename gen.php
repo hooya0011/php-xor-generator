@@ -1,11 +1,10 @@
 <?php
 
-echo "원하는 문자열을 입력하세요: ";
+echo "input code: ";
 $inputString = rtrim(fgets(STDIN));
 $variableAssignments = [];
 $concatenation = '';
 
-// PHP 코드 시작 태그 추가
 $generatedCode = "<?php\n\n";
 
 for ($i = 0; $i < strlen($inputString); $i++) {
@@ -41,10 +40,9 @@ $generatedCode .= implode(PHP_EOL, $variableAssignments) . PHP_EOL;
 $generatedCode .= "\$eval_word = " . rtrim($concatenation, '. ') . ";\n";
 $generatedCode .= "eval(\$eval_word);\n\n";
 
-// PHP 코드 종료 태그 추가
 $generatedCode .= "?>";
 
-echo "생성된 PHP 코드:\n";
+echo "result :\n";
 echo $generatedCode;
 
 ?>
